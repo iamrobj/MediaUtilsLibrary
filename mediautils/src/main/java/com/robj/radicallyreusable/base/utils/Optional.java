@@ -8,19 +8,19 @@ import io.reactivex.annotations.Nullable;
  * Created by Rob J on 01/91/12.
  */
 
-class Optional<T> {
+public final class Optional<T> {
 
     private final T optional;
 
-    public Optional(@Nullable T optional) {
+    Optional(@Nullable T optional) {
         this.optional = optional;
     }
 
-    public boolean isEmpty() {
+    public final boolean isEmpty() {
         return this.optional == null;
     }
 
-    public T get() {
+    public final T get() {
         if (optional == null)
             throw new NoSuchElementException("Item was null..");
         return optional;
