@@ -1,4 +1,4 @@
-package com.robj.radicallyreusable.base.utils;
+package com.robj.mediautils;
 
 import java.util.NoSuchElementException;
 
